@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/ros/humble/include/rclcpp",
+                "/opt/ros/humble/include/**",
+                "/home/saleheen_linux/others/ros_2_Learning/ros2_ws_cpp/install/slam_rover/include/**",
+                "/home/saleheen_linux/others/ros_2_Learning/ros2_ws_cpp/src/cpp_pubsub/include/**",
+                "/home/saleheen_linux/others/ros_2_Learning/ros2_ws_cpp/src/px4_ros_com/include/**",
+                "/home/saleheen_linux/others/ros_2_Learning/ros2_ws_cpp/src/rover_cpp/include/**",
+                "/usr/include/opencv4/**",
+                "/usr/local/include/**",
+                "/usr/include/**",
+                "/opt/ros/humble/include/rcl"
+            ],
+            "defines": [],
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
