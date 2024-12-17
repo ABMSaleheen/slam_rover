@@ -64,7 +64,7 @@ At this point, mapping can be done by manually driving the rover using the `Tele
 
 ### Step 2 -- Creating a .world file and Launching in Gazebo.
 
-* Model Setup: Begin by adding a box model in Gazebo to serve as the base surface. Assign a small height to the box to make it resemble a flat plane.
+* Model Setup: Add a box model in Gazebo to serve as the base surface. Assign a small height to the box to make it resemble a flat plane.
 
 * Surface Design: The track design was sketched using a painting application and saved in `.jpg` format. The aspect ratio of the track image was used to determine the dimensions of the box surface to ensure the image fits correctly without distortion.
 
@@ -75,14 +75,6 @@ At this point, mapping can be done by manually driving the rover using the `Tele
 * Once the rover is positioned correctly, the updated world can be saved by overwriting the previous `.world` file. 
     This ensures that in subsequent launches, the rover is automatically spawned at the saved location, eliminating the need for manual repositioning.
 
-### Step 3 -- Running the AutonmousDriving Node.
-
-* The Autonomous Driving Node processes the raw camera feed to enable track-following behavior. 
-It subscribes to the camera's raw image topic and utilizes computer vision techniques (via the `CV2` library) to detect and track the middle point between the track's edges. 
-This middle point guides the rover's steering, ensuring it stays centered on the track.
-
-* Simultaneously, the node tracks an imaginary point ahead of the camera to maintain forward motion. 
-Both the steering and forward motion are controlled using simple `Proportional-Derivative (PD)` controllers for smooth and responsive operation.
 
 
 
