@@ -1,5 +1,5 @@
 # ReadMe
-> This a project where I built a simple four wheel differential drive robot with the objective doing SLAM experiments.
+> This is a project where I built a simple four-wheel differential drive robot intending to do SLAM experiments.
 
 
 ## To run the project ------
